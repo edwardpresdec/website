@@ -1,0 +1,280 @@
+body {
+    background-color: #1B1B27;
+    }
+
+h1 {
+    color: white;
+    font-size: 25;
+    padding-left: 20;
+    font-family: monospace;
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+    padding-left: 20;
+}
+
+.div1 {
+    float: left;
+}
+
+.personal_statement {
+    float: left
+}
+
+p {
+    font-family: monospace;
+    color: white;
+}
+
+.phelp {
+    padding-left: 20;
+    font-family: monospace;
+    color: white;
+    line-height: 0;
+    white-space: normal;
+}
+
+.menu_items {
+    font-size: medium;
+    font-family: monospace;
+    color: white;
+}
+
+.ibutton {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.container {
+    margin-right: 0;
+    border-right: 0;
+    padding-bottom: 3;
+}
+
+.container img:hover{
+    transform: scaleX(1.1);
+}
+
+.menu1 {
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: 0;
+    
+}
+
+.container img{
+    height: 4vw;
+    width: 21.04vw;
+}
+
+.my-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .1s;
+    
+}
+
+.my-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img-frame{
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    border-style: dashed;
+    border-color: white;
+    margin: 2;
+}
+
+.my-div{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 30%;
+    padding: 2px;
+}
+
+.fimg-div{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fimg-div img{
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+}
+
+
+.back-div{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.back-div img{
+    width: 40;
+    height: 40;
+    object-fit: cover;
+}
+
+.div_ibutton{
+    position: fixed; 
+    bottom: 2; 
+    right: 2;
+}
+
+.div_ibutton img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.aaa{
+    position: fixed;
+    left: -1200;
+    bottom: -1200;
+    transition: 2000ms;
+}
+
+.aaa:hover{
+    transform: rotate(360deg);
+}
+
+.home_div{
+    position: fixed;
+    left: 45%;
+    right: 25%;
+    top: 10%;
+    bottom: 20%;
+}
+
+.home_div h1{
+    color: white;
+    font-family: monospace;
+    font-size:6vw;
+}
+
+.mmm{
+    position: fixed;
+    left: 17vw;
+    top: 4vw;
+    bottom: 4vw;
+    width:40vw;
+    display: inline-block;
+}
+
+.mmm_r{
+    position: relative;
+    float: right;
+    width: 27%;
+    height: 100%;
+    border: dashed;
+    border-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.mmm_l{
+    position: relative;
+    float: left;
+    width: 67%;
+    height: 100%;
+    border: dashed;
+    border-color: white;
+}
+
+.mmm_r div{
+    position: relative;
+    margin: 10;
+    text-align: center;
+    border: dashed;
+    border-color: white;
+    height: 6.25vw;
+}
+
+.normal{
+    top: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    width: 5vw;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.normal:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.special{
+    top: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+    width: 5vw;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.special:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mmm_l h1{
+    color: white;
+    font-family: monospace;
+    font-size: 3vw;
+    padding: 0;
+}
+
+.hidden{
+    border: solid, white, 19px;
+    position: fixed;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background-color: #1b1b27a8;
+    display:none;
+    text-align: center;
+}
+
+.fimg{
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+}
+
+.back{
+    position: fixed;
+    top: 0; right: 0;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.back:hover{
+    transform: scale(1.1);
+}
+
+.forwardB{
+    background: none;
+    border: none;
+    padding: 0;
+}
