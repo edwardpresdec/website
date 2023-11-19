@@ -7,13 +7,13 @@
         <div class="center1">
             <div>
                 <form action="../BE/signupfrm.php" method="POST" name="signup-form">
-                    <label for="un">First Name</label>
+                    <label for="un">User Name</label>
                     <br>
-                    <input type="text" name="firstname" class="txtfield">
+                    <input type="text" name="username" class="txtfield">
                     <br>
-                    <label for="un">Last Name</label>
+                    <label for="un">Full Name</label>
                     <br>
-                    <input type="text" name="lastname" class="txtfield">
+                    <input type="text" name="fullname" class="txtfield">
                     <br>
                     <label for="pass">Password</label>
                     <br>
@@ -39,20 +39,14 @@
         <script>
             function SignUp(){
                 var mForm=document.querySelector("form[name='signup-form']");
-                var fn=mForm.elements["firstname"].value;
-                var ln=mForm.elements["lastname"].value;
+                var usr=mForm.elements["username"].value;
+                var fn=mForm.elements["fullname"].value;
                 var pass=mForm.elements["pass"].value;
                 var confPass=mForm.elements["confirmPassword"].value;
                 var sex=mForm.elements["sex"].value;
                 var date=mForm.elements["dt"].value;
-                console.log("fn:"+fn);
-                console.log("ln:"+ln);
-                console.log("pass:"+pass);
-                console.log("confPass:"+confPass);
-                console.log("sex:"+sex);
-                console.log("date:"+date);
                 
-                if ((fn=="")||(ln=="")||(pass=="")||(confPass=="")||(date=="")) {
+                if ((usr=="")||(fn=="")||(pass=="")||(confPass=="")||(date=="")) {
                     alert("Please fill all fields.");
                 } else if ((pass!=confPass)) {
                     alert("Passwords must be equal.");
@@ -63,8 +57,8 @@
             }
             function ClearForm(){
                 var mForm=document.querySelector("form[name='signup-form']");
-                mForm.elements["firstname"].value="";
-                mForm.elements["lastname"].value="";
+                mForm.elements["username"].value="";
+                mForm.elements["fullname"].value="";
                 mForm.elements["pass"].value="";
                 mForm.elements["confirmPassword"].value="";
                 mForm.elements["sex"].value="m";
