@@ -13,7 +13,7 @@
     $loggedIn=false;
 
     foreach ($array as $A) {
-        if (($A[0] . "." . $A[1])==$un && ($A[2]==$pass)) {
+        if (($A[0]==$un) && ($A[2]==$pass)) {
             $loggedIn=true;
             break;
         }
