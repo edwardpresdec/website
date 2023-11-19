@@ -21,30 +21,27 @@
 
         <div class="menu1">
             <div class = "container">
-                <a href="home.html">
+                <a href="home.php">
                     <img src = "../images/icons/home.png" alt="Home" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="scouts.html">
-                    <img src = "../images/icons/scouts.png" alt="Scouts" width="274" height="52">
-                </a>
-            </div>
-            <div class = "container">
-                <a href="contact_us.html">
+                <a href="contact_us.php">
                     <img src = "../images/icons/sports.png" alt="Sports" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="gallery.html">
+                <a href="gallery.php">
                     <img src = "../images/icons/hobbies.png" alt="Hobbies" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="CV.html">
+                <a href="CV.php">
                     <img src = "../images/icons/CV.png" alt="CV" width="274" height="52">
                 </a>
             </div>
+            <div class = "container">Welcome: <?php echo $_SESSION["username"]; ?>!&nbsp;&nbsp;&nbsp;</div>
+            <div class = "container"><a href="../index.php">Sign Out<?php $SESSION["username"]=""?></a>&nbsp;&nbsp;&nbsp;</div>
         </div>
 
         <div class="div_ibutton">

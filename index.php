@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    session_unset();
+    session_destroy();
+?>
+
 <html>
     <head>
         <link rel="stylesheet" href="./css/main.css">

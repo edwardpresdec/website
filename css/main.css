@@ -52,6 +52,15 @@ p {
     margin-right: 0;
     border-right: 0;
     padding-bottom: 3;
+    color: white;
+    font-family: monospace;
+    text-align: right;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .container img:hover{

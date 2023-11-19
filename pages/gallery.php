@@ -1,72 +1,95 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["username"])){
+        header("location:../index.php");
+    }
+    $b = "block";
+    if (($open = fopen("../BE/gallery.csv", "r")) !== false) {
+        while (($data = fgetcsv($open, 1000, ",")) !== false) {
+            $array[] = $data;
+        }
+     
+        fclose($open);
+    }
+?>
+
 <html>
     <head>
         <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
         <div class="my-div">
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden1').style.display = 'block';">
-                <img id = "im1" src="../images/imgs/im1.jpeg" class="my-img">
-            </button>
-        </div>
+            <?php
+                foreach ($array as $A) {
+                    echo '<div class="img-frame">
+                        <button class="forwardB" onclick="document.getElementById(\''.$A[1].'\').style.display = \'block\';">
+                        <img id="imagegal" src="../images/imgs/'.$A[0].'" class="my-img">
+                        </button>
+                        </div>';
+                }
+            ?>
+            <!--
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden1').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im1.jpeg" class="my-img">
+                </button>
+            </div>
 
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden2').style.display = 'block';">
-                <img id = "imagegal" src="../images/imgs/im2.avif" class="my-img">
-            </button>
-        </div>
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden2').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im2.avif" class="my-img">
+                </button>
+            </div>
 
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden3').style.display = 'block';">
-                <img id = "imagegal" src="../images/imgs/im3.jpg" class="my-img"> 
-            </button>
-        </div>
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden3').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im3.jpg" class="my-img"> 
+                </button>
+            </div>
 
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden4').style.display = 'block';">
-                <img id = "imagegal" src="../images/imgs/im4.jpg" class="my-img">
-            </button>
-        </div>
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden4').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im4.jpg" class="my-img">
+                </button>
+            </div>
 
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden5').style.display = 'block';">
-                <img id = "imagegal" src="../images/imgs/im5.jpg" class="my-img">
-            </button>
-        </div>
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden5').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im5.jpg" class="my-img">
+                </button>
+            </div>
 
-        <div class="img-frame">
-            <button class="forwardB" onclick= "document.getElementById('hidden6').style.display = 'block';">
-                <img id = "imagegal" src="../images/imgs/im6.jpg" class="my-img">
-            </button>
-        </div>
+            <div class="img-frame">
+                <button class="forwardB" onclick= "document.getElementById('hidden6').style.display = 'block';">
+                    <img id = "imagegal" src="../images/imgs/im6.jpg" class="my-img">
+                </button>
+            </div>
+            -->
         </div>
 
         <div class="menu1">
             <div class = "container">
-                <a href="home.html">
+                <a href="home.php">
                     <img src = "../images/icons/home.png" alt="Home" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="scouts.html">
-                    <img src = "../images/icons/scouts.png" alt="Scouts" width="274" height="52">
-                </a>
-            </div>
-            <div class = "container">
-                <a href="contact_us.html">
+                <a href="contact_us.php">
                     <img src = "../images/icons/sports.png" alt="Sports" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="gallery.html">
+                <a href="gallery.php">
                     <img src = "../images/icons/hobbies.png" alt="Hobbies" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="CV.html">
+                <a href="CV.php">
                     <img src = "../images/icons/CV.png" alt="CV" width="274" height="52">
                 </a>
             </div>
+            <div class = "container">Welcome: <?php echo $_SESSION["username"]; ?>!&nbsp;&nbsp;&nbsp;</div>
+            <div class = "container"><a href="../index.php">Sign Out</a>&nbsp;&nbsp;&nbsp;</div>
         </div>
 
         <div class="div_ibutton">
