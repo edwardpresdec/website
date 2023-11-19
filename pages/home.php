@@ -1,10 +1,17 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["username"])){
+        header("location:../index.php");
+    }
+?>
+
 <html>
     <head>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
 
-        <img class="aaa"; src="./images/icons/spiral.png">
+        <img class="aaa"; src="../images/icons/spiral.png">
         
         <div class="home_div">
             <h1>Eddie's Website</h1>
@@ -14,28 +21,28 @@
 
         <div class="menu1">
             <div class = "container">
-                <a href="index.html">
-                    <img src = "./images/icons/home.png" alt="Home" width="274" height="52">
+                <a href="home.html">
+                    <img src = "../images/icons/home.png" alt="Home" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="./pages/scouts.html">
-                    <img src = "./images/icons/scouts.png" alt="Scouts" width="274" height="52">
+                <a href="scouts.html">
+                    <img src = "../images/icons/scouts.png" alt="Scouts" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="./pages/contact_us.html">
-                    <img src = "./images/icons/sports.png" alt="Sports" width="274" height="52">
+                <a href="contact_us.html">
+                    <img src = "../images/icons/sports.png" alt="Sports" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="./pages/gallery.html">
-                    <img src = "./images/icons/hobbies.png" alt="Hobbies" width="274" height="52">
+                <a href="gallery.html">
+                    <img src = "../images/icons/hobbies.png" alt="Hobbies" width="274" height="52">
                 </a>
             </div>
             <div class = "container">
-                <a href="./pages/CV.html">
-                    <img src = "./images/icons/CV.png" alt="CV" width="274" height="52">
+                <a href="CV.html">
+                    <img src = "../images/icons/CV.png" alt="CV" width="274" height="52">
                 </a>
             </div>
         </div>
@@ -43,27 +50,27 @@
         <div class="div_ibutton">
             <div style="margin: 10;">
                 <button class="ibutton" onclick=" window.open('https://instagram.com/eddie_btz?igshid=OGQ5ZDc2ODk2ZA==','_blank')">
-                    <img src = "./images/icons/insta.png" alt="Instagram" width="50" height="50">
+                    <img src = "../images/icons/insta.png" alt="Instagram" width="50" height="50">
                 </button>
             </div>
             <div style="margin:10;">
                 <button class="ibutton" onclick=" window.open('https://open.spotify.com/user/4tszupm5da5e81bkdjvcedrcw?si=78514fa38e8b478c','_blank')">
-                    <img src = "./images/icons/spoti.webp" alt="Spotify" width="50" height="50">
+                    <img src = "../images/icons/spoti.webp" alt="Spotify" width="50" height="50">
                 </button>
             </div>
             <div style="margin: 10;">
                 <button class="ibutton" onclick=" window.open('https://www.linkedin.com/in/edward-prescott-decie-552584263','_blank')">
-                    <img src = "./images/icons/linkedin.png" alt="LinkedIn" width="50" height="50">
+                    <img src = "../images/icons/linkedin.png" alt="LinkedIn" width="50" height="50">
                 </button>
             </div>
             <div style="margin: 10;">
                 <button class="ibutton" onclick=" window.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrgDMhTMlqJGLhQXGTsrTWFgsmbfzpHvlVSCwjrXQvmvdNPpqbmhFGjPPtWgjcfhgXFzLB','_blank')">
-                    <img src = "./images/icons/gmail.png" alt="Gmail" width="50" height="38">
+                    <img src = "../images/icons/gmail.png" alt="Gmail" width="50" height="38">
                 </button>
             </div>
             <div style="margin: 10;">
                 <button class="ibutton" onclick=" window.open('https://twitter.com/DecieEddie','_blank')">
-                    <img src = "./images/icons/twit.png" alt="Twitter" width="50" height="50">
+                    <img src = "../images/icons/twit.png" alt="Twitter" width="50" height="50">
                 </button>
             </div>
         </div>

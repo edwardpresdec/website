@@ -1,0 +1,53 @@
+.center {
+    display: block;
+    text-align: center;
+    margin-top: 18%;
+}
+
+.center div {
+    display: inline-block;
+    border: white dashed;
+    padding: 20;
+}
+
+.center label {
+    color: white;
+    font-family: monospace;
+    font-size: large;
+}
+
+.center input {
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.center a {
+    color: white;
+}
+
+.center1 {
+    display: block;
+    text-align: center;
+    margin-top: 16%;
+}
+
+.center1 div {
+    display: inline-block;
+    border: white dashed;
+    padding: 20;
+}
+
+.center1 label {
+    color: white;
+    font-family: monospace;
+    font-size: large;
+}
+
+.center1 input {
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.center1 a{
+    color: white;
+}
