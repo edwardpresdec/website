@@ -13,6 +13,6 @@
     fclose($handle);
 
     session_start();
-    $_SESSION["username"]=$un;
+    $_SESSION["username"]=$usr;
     header("location:../index.php");
 ?>
